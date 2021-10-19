@@ -95,8 +95,8 @@ jobs:
     - name: build frida for Android
       shell: bash
       run: |
-        git config --global user.name "${{ secrets.GIT_NAME }}"
-        git config --global user.email "${{ secrets.GIT_EMAIL }}"
+        git config --global user.name "st4kc"
+        git config --global user.email "344420202@qq.com"
         git clone https://github.com/AAAA-Project/Patchs.git
         export ANDROID_NDK_ROOT=${{ steps.setup-ndk.outputs.ndk-path }}
         git clone --recurse-submodules https://github.com/frida/frida
